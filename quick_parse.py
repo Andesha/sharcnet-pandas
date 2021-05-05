@@ -8,4 +8,3 @@ avg_hp = df['horsepower'].mean()
 sub_df = df[(df['car_name'].str.contains('ford'))]
 sub_df = sub_df[(sub_df['horsepower'] > avg_hp) & (sub_df['model_year'] > 75)]
 sub_df.to_csv('sub_mpg.csv', index=False)
-
